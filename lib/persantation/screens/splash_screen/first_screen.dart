@@ -1,8 +1,11 @@
-import 'package:best_ten_ui_expanse_app/navigation_bar_page.dart';
+
+
 import 'package:flutter/material.dart';
+import '../login_screen/login_page.dart';
+
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +20,7 @@ class FirstScreen extends StatelessWidget {
               fontWeight: FontWeight.bold
             ),),
             SizedBox(height: 30),
-            Image.asset("assets/images/intro.jpeg"),
+            Image.asset("lib/assets/images/intro.jpeg"),
             SizedBox(height: 10),
             Text('Easy way to monitor',
               style: TextStyle(
@@ -43,13 +46,20 @@ class FirstScreen extends StatelessWidget {
               children: [
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(2)
-                  )
+                    borderRadius: BorderRadius.circular(5),
+
+                  ),
+                      shadowColor: Colors.grey
                 ),
                     onPressed: (){
-                      Navigator.push(context,MaterialPageRoute(builder: (context)=>NavigationBarPage()));
-                    }, child: Icon(Icons.arrow_forward_outlined)),
+                      Navigator.push(context,MaterialPageRoute(builder: (context)=>LoginPage()));
+                    }, child:Text('Create Account ﹥',style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 15,
+                  color: Colors.black54
+                ),)),
               ],
             ),
 
@@ -60,4 +70,9 @@ class FirstScreen extends StatelessWidget {
       ),
     );
   }
-}
+
+    
+  }
+  
+  
+

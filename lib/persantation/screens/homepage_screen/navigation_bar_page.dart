@@ -1,9 +1,15 @@
-import 'package:best_ten_ui_expanse_app/add_page.dart';
-import 'package:best_ten_ui_expanse_app/home_page.dart';
-import 'package:best_ten_ui_expanse_app/notification.dart';
-import 'package:best_ten_ui_expanse_app/profile.dart';
-import 'package:best_ten_ui_expanse_app/statistic.dart';
+
+
+
+import 'package:best_ten_ui_expanse_app/persantation/screens/homepage_screen/profile.dart';
+import 'package:best_ten_ui_expanse_app/persantation/screens/homepage_screen/statistic.dart';
 import 'package:flutter/material.dart';
+
+import 'add_page.dart';
+import 'home_page.dart';
+import 'notification.dart';
+
+
 
 class NavigationBarPage extends StatefulWidget {
 

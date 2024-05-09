@@ -1,8 +1,9 @@
-import 'package:best_ten_ui_expanse_app/first_screen.dart';
-import 'package:best_ten_ui_expanse_app/navigation_bar_page.dart';
+
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'splash_screen/first_screen.dart';
+
+
 
 void main() {
   runApp( MyApp());
